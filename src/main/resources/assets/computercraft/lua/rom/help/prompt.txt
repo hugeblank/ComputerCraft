@@ -1,0 +1,21 @@
+All the different configurations for textutils.prompt():
+- replaceChar (string): The character used to replace all inputted characters. No default.
+- history (table): What gets displayed when the user uses the up key, or the down key, prioritized under the 'complete' option. No default.
+- complete (function): If a function is provided, gives a list of options according to the currrently inputted text. Overrides 'history'. No default.
+- prefix (string): Allows for a string of text to be inputted before the user types. No default.
+- limit (number): Sets the x-coordinate to start scrolling the text while typing or moving the cursor. Default is the size of the screen.
+- newline (boolean): Enable or disable the option to append a newline character to the output. Enabled by default.
+- completeBGColor (number): Sets the background color of the autofill options. Black (32768) by default.
+- completeTextColor (number): Sets the text color of the autofill options. White (1) by default.
+- filter (function): Sets the function that allows the ability to limit what characters are accepted on input. No default.
+- customkeys (table): Sets the custom 'special' keys for the input. Default:
+  - enter = keys.enter
+  - left = keys.left
+  - right = keys.right
+  - up = keys.up
+  - down = keys.down
+  - backspace = keys.backspace
+  - home = keys.home
+  - delete = keys.delete
+  - end = keys["end"]
+  - tab = keys.tab
